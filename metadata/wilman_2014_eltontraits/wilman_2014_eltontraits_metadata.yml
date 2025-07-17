@@ -1,0 +1,218 @@
+status: draft
+dataset:
+  id: wilman_2014_eltontraits_mammals
+  title: "EltonTraits 1.0: Species-level foraging attributes of the world's birds and mammals"
+  description: "The data set includes information on key characteristics of the foraging ecology of all 15,393 extant bird and mammal species. Variables include relevance of select diet types and foraging strata, body size, and activity time."
+  license: .license
+  bibtex: .filename
+  doi: 10.6084/m9.figshare.c.3306933.v1
+  url: https://figshare.com/collections/EltonTraits_1_0_Species-level_foraging_attributes_of_the_world_s_birds_and_mammals/3306933
+  taxon: mammals
+  taxonomic_level: species
+  type: static
+  file_url: https://figshare.com/articles/dataset/Data_Paper_Data_Paper/3559887?backTo=%2Fcollections%2FEltonTraits_1_0_Species-level_foraging_attributes_of_the_world_s_birds_and_mammals%2F3306933&file=5631084
+  file_name: MamFuncDat
+  file_extension: .txt
+  manual_download: no
+  sheet: 1
+  long_format: no
+  skip_rows: .na
+  col_separator: " "
+  na_value: NA
+  taxonomy:
+    genus: .na
+    species: MSWFamilyLatin
+    binomial: Scientific
+  comment: .na
+traits:
+  - variable: MSW3_ID
+    name: Jetz Lab Species ID
+    category: .na
+    type: .na
+    units: .na
+  - variable: Scientific
+    name: Species scientific name
+    category: .na
+    type: .na
+    units: .na
+  - variable: MSWFamilyLatin
+    name: Binomial species name
+    category: .na
+    type: .na
+    units: .na
+  - variable: Diet-Inv
+    name: Percentage of diet made up of invertebrates
+    category: diet
+    type: quantitative
+    units: percentage
+  - variable: Diet-Vend
+    name: Percentage of diet made up of mammals or birds
+    category: diet
+    type: quantitative
+    units: percentage
+  - variable: Diet-Vect
+    name: Percentage of diet made up of reptiles or amphibians
+    category: diet
+    type: quantitative
+    units: percentage
+  - variable: Diet-Vfish
+    name: Percentage of diet made up of fish
+    category: diet
+    type: quantitative
+    units: percentage
+  - variable: Diet-Vunk
+    name: Percentage of diet made up of unknown or general vertebrates
+    category: diet
+    type: quantitative
+    units: percentage
+  - variable: Diet-Vunk
+    name: Percentage of diet made up of unknown or general vertebrates
+    category: diet
+    type: quantitative
+    units: percentage
+  - variable: Diet-Scav
+    name: Percentage of diet made up of scavenged garbage, offal, carcasses, trawlers, carrion
+    category: diet
+    type: quantitative
+    units: percentage
+  - variable: Diet-Fruit
+    name: Percentage of diet made up of fruit or drupes
+    category: diet
+    type: quantitative
+    units: percentage
+  - variable: Diet-Nect
+    name: Percentage of diet made up of nectar, pollen, plant exudates, gums
+    category: diet
+    type: quantitative
+    units: percentage
+  - variable: Diet-Seed
+    name: Percentage of diet made up of seed, maize, nuts, spores, wheat, grains
+    category: diet
+    type: quantitative
+    units: percentage
+  - variable: Diet-PlantO
+    name: Percentage of diet made up of other plant material
+    category: diet
+    type: quantitative
+    units: percentage
+  - variable: Diet-Source
+    name: Reference ID. Refer to Mammal Reference Table for full list of references
+    category: diet
+    type: categorical
+    units: .na
+  - variable: Diet-Certainty
+    name: Estimated reliability of relative diet scores
+    category: diet
+    type: categorical
+    units: .na
+    levels:
+      - value: A
+        description: highly certain that the source is reliable
+      - value: B
+        description: reasonably certain that the source is reliable
+      - value: C
+        description: somewhat certain that the source is reliable
+      - value: D
+        description: species-level information missing
+  - variable: ForStrat-Value
+    name: Foraging stratum category
+    category: foraging
+    type: categorical
+    units: .na
+    levels:
+      - value: M
+        description: marine
+      - value: G
+        description: ground level incl. aquatic foraging
+      - value: S
+        description: scansorial
+      - value: Ar
+        description: arboreal
+      - value: A
+        description: aerial
+  - variable: ForStrat-Certainty
+    name: Estimated reliability of foraging stratum assignment
+    category: foraging
+    type: categorical
+    units: .na
+    levels:
+      - value: A
+        description: Certain that the source is reliable and has provided accurate foraging stratum information
+      - value: B
+        description: Assignment uncertain
+  - variable: ForStrat-Comment
+    name: Comments regarding foraging stratum
+    category: foraging
+    type: .na
+    units: .na
+  - variable: Activity-Nocturnal
+    name: Foraging activity at night
+    category: foraging
+    type: categorical
+    units: binary
+    levels:
+      - value: 0
+        description: no
+      - value: 1
+        description: yes
+  - variable: Activity-Crepuscular
+    name: Foraging activity at twilight (dawn, dusk)
+    category: foraging
+    type: categorical
+    units: binary
+    levels:
+      - value: 0
+        description: no
+      - value: 1
+        description: yes
+  - variable: Activity-Diurnal
+    name: Foraging activity at day
+    category: foraging
+    type: categorical
+    units: binary
+    levels:
+      - value: 0
+        description: no
+      - value: 1
+        description: yes
+  - variable: Activity-Source
+    name: Literature source of activity cycle estimate
+    category: foraging
+    type: .na
+    units: .na
+  - variable: Activity-Certainty
+    name: Estimated reliability of activity cycle estimates
+    category: foraging
+    type: categorical
+    units: .na
+    levels:
+      - value: A
+        description: highly certain that the source is reliable
+      - value: B
+        description: reasonably certain that the source is reliable
+      - value: C
+        description: somewhat certain that the source is reliable
+      - value: D
+        description: species-level information missing
+  - variable: BodyMass-Value
+    name: Average adult body mass
+    category: morphometrics
+    type: quantitative
+    units: g
+  - variable: BodyMass-Source
+    name: Literature source used for body mass
+    category: morphometrics
+    type: .na
+    units: .na
+  - variable: BodyMass-SpecLevel
+    name: Indicates whether body mass values are based on species-level data
+    category: morphometrics
+    type: categorical
+    units: .na
+    levels:
+      - value: 0
+        description: inferred from genus or family typical values
+      - value: 1
+        description: based on species level data
+      - value: 2
+        description: based on phylogenetically imputed values
